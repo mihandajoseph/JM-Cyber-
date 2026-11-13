@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Lab runtime artifacts (the database is generated from schema.sql)
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets / local env (none should ever be real in this repo)
+.env
+.env.*
+
+# macOS (this repo lives on a Mac-formatted drive)
+.DS_Store
+.Trashes
+.Spotlight-V100
