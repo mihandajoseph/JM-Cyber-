@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JM Cyber Lab</title>
+  <style>
+    body { font-family: -apple-system, system-ui, sans-serif;
+           background: #0e0f13; color: #e7e7ea; margin: 0; }
+    .wrap { max-width: 420px; margin: 72px auto; padding: 0 20px; }
+    .card { background: #16181f; border: 1px solid #262a35;
+            border-radius: 12px; padding: 24px; }
+    h1 { font-size: 20px; margin: 0 0 4px; }
+    .sub { color: #8b8f9c; font-size: 13px; margin: 0 0 20px; }
+    label { display: block; font-size: 13px; margin: 14px 0 6px; }
+    input { width: 100%; box-sizing: border-box; padding: 10px 12px;
+            background: #0e0f13; border: 1px solid #2d323f; border-radius: 8px;
+            color: #e7e7ea; font-size: 14px; }
+    button { margin-top: 20px; width: 100%; padding: 11px;
+             background: #3b82f6; color: #fff; border: 0; border-radius: 8px;
+             font-size: 14px; font-weight: 600; cursor: pointer; }
+    .error { background: #2a1416; border: 1px solid #5b1d22; color: #f3b2b6;
+             padding: 10px 12px; border-radius: 8px; font-size: 13px;
+             margin-top: 16px; word-break: break-word; }
+    .flag { background: #10231a; border: 1px solid #1f5137; color: #7ee2ad;
+            padding: 12px 14px; border-radius: 8px; font-family: ui-monospace,
+            monospace; margin-top: 16px; word-break: break-word; }
+    a { color: #7aa7ff; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      {% block body %}{% endblock %}
+    </div>
+  </div>
+</body>
+</html>

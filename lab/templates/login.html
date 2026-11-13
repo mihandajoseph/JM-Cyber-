@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block body %}
+  <h1>JM Cyber Lab</h1>
+  <p class="sub">Challenge 1 — Front Door. Sign in to continue.</p>
+  <form method="post" action="{{ url_for('login') }}">
+    <label for="username">Username</label>
+    <input id="username" name="username" autocomplete="off" autofocus>
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" autocomplete="off">
+    <button type="submit">Sign in</button>
+  </form>
+  {% if error %}<div class="error">{{ error }}</div>{% endif %}
+{% endblock %}

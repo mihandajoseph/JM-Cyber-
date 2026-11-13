@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block body %}
+  <h1>Dashboard</h1>
+  <p class="sub">Signed in as <strong>{{ user }}</strong> ({{ role }})</p>
+  {% if flag %}
+    <p>Nice work — you reached an admin session. Here's your flag:</p>
+    <div class="flag">{{ flag }}</div>
+  {% else %}
+    <p>You're in as a normal user. There's no flag here — the prize is
+    behind an <strong>admin</strong> session. Back to the
+    <a href="{{ url_for('login') }}">front door</a>.</p>
+  {% endif %}
+  <p style="margin-top:20px"><a href="{{ url_for('logout') }}">Log out</a></p>
+{% endblock %}
