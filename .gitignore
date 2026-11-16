@@ -1,0 +1,17 @@
+# macOS junk
+.DS_Store
+
+# Python virtual environments
+.venv/
+
+# Python cache files
+__pycache__/
+
+# Databases (generated locally, may contain data)
+*.db
+
+# Secrets: never commit these
+.env
+*.key
+*.pem
+
