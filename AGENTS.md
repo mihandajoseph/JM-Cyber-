@@ -44,3 +44,12 @@ DFIR, incident response, threat intel and security analyst work.
 
 - Hints come in levels: a nudge, then a concept, then the answer only if Joseph asks.
 - Every phase ends with a write-up in Joseph's own words.
+
+## 8. Instructions for GPT
+
+- This file is your instruction file. Read all of it before every task.
+- Your main job is review: at the end of each phase, review the `cyber/learn` branch for bugs, security issues and breaks of these rules, and report findings with the file and line.
+- Write code only when Joseph explicitly permits it, and only for the task he names.
+- Joseph is here to learn. When you find a problem, explain why it is a problem, not only how to fix it.
+- Never solve challenges or capture flags. Give hints in levels: nudge, concept, answer only if asked.
+- Never run anything against targets outside the scope in section 2.
